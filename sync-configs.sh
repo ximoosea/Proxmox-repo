@@ -2,7 +2,7 @@
 
 # 1. Define paths
 SOURCE_DIR="/etc/pve/lxc"
-DEST_DIR="/root/infra-repo/proxmox-configs"
+DEST_DIR="/root/Proxmox-repo/proxmox-configs"
 NAS_IP="192.168.10.101"
 NAS_PATH="/volume1/NetBackup/ProxmoxConfigs"
 
