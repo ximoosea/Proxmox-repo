@@ -6,7 +6,13 @@ ffmpeg:
 
 detectors:
   ov:
-    type: cpu
+    type: openvino
+    device: GPU
+    model:
+      path: /openvino-model/ssdlite_mobilenet_v2.xml
+      labelmap_path: /openvino-model/coco_91cl_bkgr.txt
+      width: 300
+      height: 300
 
 go2rtc:
   streams:
@@ -43,4 +49,4 @@ record:
     days: 30
     mode: all
 
-version: 0.14
+version: 0.17
