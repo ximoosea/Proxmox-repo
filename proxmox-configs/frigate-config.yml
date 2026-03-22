@@ -45,8 +45,8 @@ cameras:
 
 record:
   enabled: true
-  continuous:
+  retain:
     days: 30
-  motion:
-    days: 30
-version: 0.17-0
+    mode: all
+
+version: 0.14
