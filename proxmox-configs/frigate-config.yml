@@ -6,11 +6,6 @@ ffmpeg:
 
 model:
   path: ssdlite_mobilenet_v2
-  labelmap_path: coco_91cl_bkgr.txt
-  width: 300
-  height: 300
-  input_tensor: nhwc
-  input_pixel_format: bgr
 
 detectors:
   ov:
