@@ -8,9 +8,8 @@ detectors:
   ov:
     type: openvino
     device: GPU
-
-model:
-  path: ssdlite_mobilenet_v2
+    model:
+      path: /openvino-model/ssdlite_mobilenet_v2.xml
 
 go2rtc:
   streams:
