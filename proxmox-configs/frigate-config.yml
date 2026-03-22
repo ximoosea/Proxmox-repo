@@ -8,11 +8,9 @@ detectors:
   ov:
     type: openvino
     device: GPU
-    model:
-      path: /openvino-model/ssdlite_mobilenet_v2.xml
-      labelmap_path: /openvino-model/coco_91cl_bkgr.txt
-      width: 300
-      height: 300
+
+model:
+  path: ssdlite_mobilenet_v2
 
 go2rtc:
   streams:
