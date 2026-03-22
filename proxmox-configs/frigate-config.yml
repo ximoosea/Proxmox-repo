@@ -10,7 +10,7 @@ detectors:
     device: GPU
 
 model:
-  path: yolov8n
+  path: /openvino-model/yolov8n/yolov8n_openvino_model/yolov8n.xml
   width: 320
   height: 320
 
