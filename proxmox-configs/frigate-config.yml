@@ -4,17 +4,18 @@ mqtt:
 ffmpeg:
   hwaccel_args: preset-vaapi
 
+model:
+  path: ssdlite_mobilenet_v2
+  labelmap_path: coco_91cl_bkgr.txt
+  width: 300
+  height: 300
+  input_tensor: nhwc
+  input_pixel_format: bgr
+
 detectors:
   ov:
     type: openvino
     device: GPU
-    model:
-      path: /openvino-model/ssdlite_mobilenet_v2.xml
-      labelmap_path: /openvino-model/coco_91cl_bkgr.txt
-      width: 300
-      height: 300
-      input_tensor: nhwc
-      input_pixel_format: bgr
 
 go2rtc:
   streams:
